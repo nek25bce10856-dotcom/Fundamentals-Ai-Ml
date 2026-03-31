@@ -1,0 +1,65 @@
+import datetime
+
+study_plan = []
+
+def add_task():
+    subject = input("Enter subject: ")
+    topic = input("Enter topic: ")
+    duration = int(input("Enter duration (in minutes): "))
+    time = input("Enter study time (HH:MM, 24-hour format): ")
+    
+    task = {
+        "subject": subject,
+        "topic": topic,
+        "duration": duration,
+        "time": time
+    }
+    study_plan.append(task)
+    print("✅ Task added successfully!\n")
+
+def view_tasks():
+    if not study_plan:
+        print("No tasks added yet.\n")
+        return
+    
+    print("\n📚 Your Study Plan:")
+    for i, task in enumerate(study_plan, start=1):
+        print(f"{i}. {task['time']} - {task['subject']} ({task['topic']}) for {task['duration']} mins")
+    print()
+
+def delete_task():
+    view_tasks()
+    try:
+        index = int(input("Enter task number to delete: ")) - 1
+        if 0 <= index < len(study_plan):
+            removed = study_plan.pop(index)
+            print(f"❌ Removed {removed['subject']} - {removed['topic']}\n")
+        else:
+            print("Invalid number.\n")
+    except ValueError:
+        print("Please enter a valid number.\n")
+
+def menu():
+    while True:
+        print("====== Study Planner ======")
+        print("1. Add Task")
+        print("2. View Tasks")
+        print("3. Delete Task")
+        print("4. Exit")
+        
+        choice = input("Choose an option: ")
+        
+        if choice == "1":
+            add_task()
+        elif choice == "2":
+            view_tasks()
+        elif choice == "3":
+            delete_task()
+        elif choice == "4":
+            print("Good luck with your studies! 🚀")
+            break
+        else:
+            print("Invalid choice, try again.\n")
+
+# Run the planner
+(menu)
