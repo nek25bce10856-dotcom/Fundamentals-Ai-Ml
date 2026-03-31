@@ -1,0 +1,32 @@
+Project Report
+Simple Study Planner
+1. Introduction
+Time management is very important for students. Many students forget their study tasks or cannot organize their study time properly. A study planner helps students manage their daily study activities in an organized way. This project is a simple command-line based study planner created using Python.
+2. Problem Statement
+Students often struggle to remember their study tasks and plan their study schedule effectively. Without proper planning, they may waste time or miss important topics. Therefore, a simple system is needed to help students manage their study tasks.
+3. Objective of the Project
+The main objective of this project is to create a simple program that allows users to:
+Add study tasks
+View their study plan
+Delete tasks when they are completed
+4. Tools and Technologies Used
+Python programming language
+Command Line Interface (CLI)
+5. Methodology
+The program uses Python functions to manage study tasks.
+A list is used to store tasks, and each task is stored as a dictionary containing subject, topic, duration, and study time.
+The user interacts with the program through a menu where they can choose different options such as adding tasks, viewing tasks, or deleting tasks.
+6. Features of the Project
+Simple and easy-to-use interface
+Add study tasks with subject and topic
+View all planned tasks
+Delete completed tasks
+7. Challenges Faced
+Some challenges during the project included managing user input correctly and organizing tasks in a structured way using lists and dictionaries.
+8. Learning Outcomes
+From this project, I learned:
+How to use Python functions
+How to store and manage data using lists and dictionaries
+How to create a menu-driven program
+9. Conclusion
+The Simple Study Planner is a useful tool that helps students organize their study tasks efficiently. It demonstrates how programming can be used to solve real-life problems in a simple and effective way.
